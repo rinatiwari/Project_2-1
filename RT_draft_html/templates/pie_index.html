@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Market Capitalization</title>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700,700i&display=swap" rel="stylesheet">
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen"> -->
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="../static/css/styles.css" media="screen">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <!-- New Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="../static/images/WSWSlogo.png" width="60" height="60" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        <li class="nav-item">
+          <a class="nav-link" href="overview.html">Overview</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="table.html">Companies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="funnel.html" >Stock Analysis</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Find" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Stock Ticker</button>
+      </form>
+    </div>
+  </nav>
+    
+    
+    <!-- End new Navbar -->
+    <!-- Description -->
+    <div id="descriptor">
+        <div class="container-fluid">
+            <h1>Industry Sectors of the Companies Studied</h1>
+            <h3>Drop Down Menu Allows Segmentation of Data by Market Capitalization</h3>
+        <select id="selDataset">
+            <option value="all">All (724 Companies)</option>
+            <option value="sc">Small Cap (7 Companies, < $2B)</option>
+            <option value="mc">Mid Cap (184 Companies, $2B - $10B)</option>
+            <option value="lc">Large Cap (533 Companies, > $10B)</option>
+        </select>
+        </div>
+    </div>
+
+    <div id="pie"></div>
+
+    <!-- Start of footer -->
+    <footer>
+        <footer class="footer navbar-fixed-bottom">
+          <div class="two-toned-footer-color"></div>
+          <p class="text-muted text-muted-footer text-center">
+            Contributors: Gayatri, Jorge, Rina, Steven, Sumita, William, Zachary.
+            Copyright & Copy;2020 Wall Street Warriors (WSWs).
+          </p>
+          </div>
+        </footer>
+
+    <script src="../static/data/sector_count.json"></script>
+    <script src="../static/data/small_cap.json"></script>
+    <script src="../static/data/mid_cap.json"></script>
+    <script src="../static/data/large_cap.json"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <script src="../static/js/sector_mkt_cap_pie_plots.js"></script>
+</body>
+</html>

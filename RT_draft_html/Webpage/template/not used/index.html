@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Risk Scores Dashboard</title>
+    <!-- Boostrap Stylesheet -->
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="../../static/css/styles.css" media="screen">
+    <!-- Importing google font library -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    
+  </head>
+
+  <!--Start Home Section--> 
+  <header>
+    <img src="../../static/images/WSWSlogo.png" alt="WSWSlogo" class= "logo">
+
+  
+  <!-- Start of Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#overview">OVERVIEW</a></li>
+        <li><a href="#chart">PORTFOLIO</a></li>
+          <ul>
+            <li><a href="#pie_chart">SECTROS</a></li>
+            <li><a href="#bar_chart">INDUSTRIES</a></li>
+            <li><a href="#table">ESG STATUS</a></li>
+          </ul>
+        <li><a href="#stock_analysis">STOCK ANALYSIS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        </li>
+        <form>
+          <input class ="form-control" type="search" placeholder="Find" aria-label="Search">
+          <button class="button-accent" type="submit" href="stock_analysis">STOCK TICKER</button>
+        </form> 
+                
+      </ul>
+    </nav>
+  </header>
+  <!-- End Navigation -->
+  <!--End Header-->
+
+  <!-- Start Landing Page Section -->
+  <!-- jumbotron & intro -->
+  <div class="row">
+    <div class="col-lg-12">
+    <div class="jumbotron">
+      <div class="overlay"></div>
+      <div class="inner">
+        <h1>ESG Stock Investing</h1>
+        <h2 style="color:rgb(7, 133, 47)"> Going beyond traditional stock analysis</h2>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- Description -->
+  <div id="descriptor">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 style="color:rgb(61, 190, 102)">What is ESG?</h2>
+          <h3>ESG Environment, Social and Governance refers to the three central factors in measuring the sustainability and societal impact of an investment in a company or business</hr>
+          <h3>It all started with the founder of one of the City of London’s leading branding consultancies established the first environmental finance research groups. The informal group of financial leaders, city lawyers and environmental stewardship NGOs became known as The Virtuous Circle, and it’s main purpose was to examine the nature of the correlation between environmental and social standards and financial performance. Several of the big banks began to respond with growing interest in the ESG Investment market with provision of sell-side services.</hr>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <section class="container">
+    <div class="container-fluid">
+      <h1 class="landing-page"> ESG Stock Investing
+        <span>Going beyond traditional stock analysis</span>
+      </h1>
+      <a class ="btn btn-outline-light btn-lg" href="#overview">Get Started</a>
+    </div>
+  </section> -->
+  
+  <!-- End Landing Page Section -->
+
+  <!-- End Home Section -->
+
+  <!-- Start of Overview -->
+
+  <div class="home-about">
+
+    <div class="home-about-textbox"></div>
+      <h1>What is ESG ?</h1>
+      <p>Environment, Social and Governance refers to the three central factors in measuring
+         the <strong>sustainability and societal impact of an investment</strong> in a company or business. (Wikipedia)</p>
+      <p>ESG Risk Rating is calculated by adding the amount of unmanaged risk for each material ESG issue.</p>
+    </div>
+  </div>
+  
+  <!-- End of Overview -->
+  
+  <!-- Start Portfolio Section-->
+
+  <section class="visualizations">
+    <h1>Major Findings</h1>
+
+    <--visualization item 01 -->
+      <!-- <figure>
+        <img scr="static/images/WSWSlogo.png" alt="visualization item">
+        <figcaption class="industries">
+          <p>Industries</p>
+          <a href="industries.html"><script src="../static/js/filename" class="btn btn-outline-light btn-ml"></script></a>
+        </figcaption>
+      </figure>
+     -->
+    <--visualization item 02 -->
+      <figure>
+        <img scr="../../static/images/$plant.jpg" alt="visualization item">
+        <figcaption class="industries">
+          <p>Industries</p>
+          <a href="../pie_index.html"><script src="../../static/js/sector_mkt_cap_pie_plots.js" class="btn btn-outline-light btn-ml"></script></a>
+        </figcaption>
+      </figure>
+    
+    <--visualization item 03 -->
+      <figure>
+        <img scr="../../static/images/map.png" alt="visualization item">
+        <figcaption class="industries">
+          <p>Industries</p>
+          <a href="../map.html"><script src="../../static/js/leaflet-heatmap.js" class="btn btn-outline-light btn-ml"></script></a>
+        </figcaption>
+      </figure>
+
+    <--visualization item 04 --> 
+      <figure>
+        <img scr="../../static/images/WSWSlogo.png" alt="visualization item">
+        <figcaption class="industries">
+          <p>Industries</p>
+          <a href="../funnel.html"><script src="../../static/js/stock_perf_2019_funnel.js" class="btn btn-outline-light btn-ml"></script></a>
+        </figcaption>
+      </figure>
+    
+      <!-- <--visualization item 05 -->
+      <!-- <figure>
+        <img scr="static/images/WSWSlogo.png" alt="visualization item">
+        <figcaption class="industries">
+          <p>Industries</p>
+          <a href="industries.html"><script src="statis/.js/filename" class="btn btn-outline-light btn-ml"></script></a>
+        </figcaption>
+      </figure>
+    
+    <--visualization item 06 --> 
+      <!-- <figure>
+        <img scr="static/images/WSWSlogo.png" alt="visualization item">
+        <figcaption class="industries">
+          <p>Industries</p>
+          <a href="industries.html"><script src="statis/.js/filename" class="btn btn-outline-light btn-ml"></script></a>
+        </figcaption>
+      </figure> --> 
+
+  </section>
+
+  <!-- End of Portfolio Section -->
+    
+  <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom">
+      <div class="col-2">
+      <p>Copyright & Copy;2020 Wall Street Warriors (WSWs).
+      </p>
+      </div>
+      <div class="col-3">
+        <ul>
+          <li>Gayatri</li>
+          <li>Jorge</li>
+          <li>Rina</li>
+          <li>Steven</li>
+          <li>Sumita</li>
+          <li>William</li>
+          <li>Zachary</li>
+        </ul>
+      </div>
+    </footer>
+  <!-- End of footer -->
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../../static/js/sector_mkt_cap_pie_plots.js"></script>
+    <script src="../../static/js/leaflet-heatmap.js"></script>
+    <script src="../../static/js/logic.js"></script>
+    <script src="../../static/js/config.js"></script>
+    <script src="../../static/js/stock_perf_2019_funnel.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ESG Risk Scores Dashboard</title>
+
+  <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700,700i&display=swap" rel="stylesheet">
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen"> -->
+  <!-- Our own CSS stylesheet -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" href="../static/css/styles.css" media="screen">
+</head>
+
+<body>
+  <!-- New Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="../static/images/WSWSlogo.png" width="60" height="60" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        <li class="nav-item">
+          <a class="nav-link" href="overview.html">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="table.html">Companies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="funnel.html">Stock Analysis</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Find" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Stock Ticker</button>
+      </form>
+    </div>
+  </nav>
+  <table id="myTable">
+    <tr class="header">
+      <!-- End new Navbar -->
+
+      <!-- jumbotron & intro -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="jumbotron">
+            <div class="overlay">
+              <div class="inner">
+                <h1>ESG Stock Investing</h1>
+                <h2 style="color:rgb(7, 133, 47)"> Going beyond traditional stock analysis</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Description -->
+      <div id="descriptor">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2 style="color:rgb(61, 190, 102)">What is ESG?</h2>
+              <h3>ESG Environment, Social and Governance refers to the three central factors in measuring the
+                sustainability and societal impact of an investment in a company or business</hr>
+                <h3>It all started with the founder of one of the City of London’s leading branding consultancies
+                  established the first environmental finance research groups. The informal group of financial leaders,
+                  city lawyers and environmental stewardship NGOs became known as The Virtuous Circle, and it’s main
+                  purpose was to examine the nature of the correlation between environmental and social standards and
+                  financial performance. Several of the big banks began to respond with growing interest in the ESG
+                  Investment market with provision of sell-side services.</hr>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Start dashboard-->
+
+      <div id="dashboard">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 style="color:rgb(61, 190, 102)">Visualizations</h1>
+              <h2>Click below for Visualizations</hr>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-3">
+              <a href="pie_index.html"><img src="../static/images/Indchart.png" alt="#" class="imageNav-photo"></a>
+              <h4>Histogram</h4>
+              <p>Insert here description of Visualization1</p>
+            </div>
+
+            <div class="col-md-3">
+              <a href="funnel.html"><img src="../static/images/plant.jpg" alt="#" class="imageNav-photo"></a>
+              <h4>Stock Performance</h4>
+              <p>Insert here description of Visualization2</p>
+            </div>
+
+            <div class="col-md-3">
+              <a href="pie_index.html">
+                <imp src="../static/images/market.png" alt="#" class="imageNav-photo">
+              </a>
+              <h4>Market Capitalization</h4>
+              <p>Insert here description of Visualization3</p>
+            </div>
+
+            <div class="col-md-3">
+              <a href="map.html"><img src="../static/images/map.png" alt="#" class="imageNav-photo"></a>
+              <h4>Geographic mapping</h4>
+              <p>Insert here description of Visualization4</p>
+            </div>
+            <div class="col-md-4">
+              <a href="funnel.html"><img src="../static/images/Indchart.png" alt="#" class="imageNav-photo"></a>
+              <h4>Visualization Other</h4>
+              <p>Insert here description of Visualization5</p>
+            </div> -->
+          </div>
+        </div>
+
+
+        <!-- End of the Visualizations imageNav Area -->
+        <!-- End of container -->
+
+        <!-- Start of footer -->
+        <footer>
+          <footer class="footer navbar-fixed-bottom">
+            <div class="two-toned-footer-color"></div>
+            <p class="text-muted text-muted-footer text-center">
+              Contributors: Gayatri, Jorge, Rina, Steven, Sumita, William, Zachary.
+              Copyright & Copy;2020 Wall Street Warriors (WSWs).
+            </p>
+      </div>
+      </footer>
+
+      <!-- End of footer -->
+      <!-- End of footer -->
+      <!-- jQuery CDN -->
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+      <script src="../static/js/sector_mkt_cap_pie_plots.js"></script>
+      <!-- <script src="../static/js/stock_perf_2019_funnel.js"></script> -->
+      <!-- <script src="../static/js/leaflet-heatmap.js"></script>
+      <script src="../static/js/config.js"></script>
+      <script src="../static/js/logic.js"></script>
+      <script src="../static/js/leaflet-heatmap.js"></script>
+      <script src="../static/js/leaflet-heatmap.js"></script> -->
+
+</body>
+
+</html>
